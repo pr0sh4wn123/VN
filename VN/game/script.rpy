@@ -6,17 +6,28 @@
 # Declare characters used by this game.
 define N = Character('Nova', color="#0066FF")
 define S = Character('Shawn', color="#33CC33")
-
+image cNova = "CNova.png"
+image cShawn = "CShawn.png"
+image BG = "BG.jpg"
 
 # The game starts here.
 label start:
-
-    N "Shawn! We are creating a game! ...However.."
     
+    scene BG
+    show cNova at left
+    N "Shawn! We are creating a game! ...However.."
+    hide cNova
+    
+    show cShawn at right
     S "What? Oh ya! We need an artist!!"
+    hide cShawn
 
+    show cNova at center
     N "Ya! Let's find him/her!"
     
+    show cShawn at right behind cNova
     S "Gotcha~"
-
+    
+    
+    
     return
