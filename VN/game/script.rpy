@@ -6,9 +6,9 @@
 # Declare characters used by this game.
 define N = Character('Nova', color="#0066FF")
 define S = Character('Shawn', color="#33CC33")
-image cNova = "CNova.png"
-image cShawn = "CShawn.png"
-image BG = "BG.jpg"
+image cNova = "images/CNova.png"
+image cShawn = "images/CShawn.png"
+image BG = "images/BG.jpg"
 
 # The game starts here.
 label start:
