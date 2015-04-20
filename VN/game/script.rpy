@@ -15,6 +15,8 @@ image BG = "images/BG.jpg"
 image cAlex = "images/CAlex.png"
 image cHunter = "images/cHunter.png"                             
 image tavernBG = "images/tavernBG.jpg"
+image Agnaktor = "images/Agnaktor.png"
+image volcanoBG = "images/volcanoBG.jpg"
 
 # The game starts here.
 label start:
@@ -34,10 +36,10 @@ label start:
     show cNova at center
     N "Ya! Let's find him/her!"
     
-    show cShawn at right behind cNova
+    show cShawn at right
     S "Gotcha~"
 
-    show cAlex at left
+    show cAlex at left behind cNova
     A "idiots..."
     
 label tavern:
@@ -52,7 +54,7 @@ label tavern:
     show cNova at center
     N "Nope.. why did we go to a tavern to look for talent?"
     
-    show cAlex at left
+    show cAlex at left behind cNova
     A "Hey! There's my old G rank hunter buddy! Hey let's go hunt an Agnaktor!"
     
     "SHUT THE HELL UP!!"
@@ -80,7 +82,7 @@ label tavern:
     show cShawn at right
     S "Well.. that didn't go to well..."
     
-    show cNova at center
+    show cNova at center behind cShawn
     N "Ya that kind of sucked... Should we keep trying?"
     
     menu:
@@ -130,4 +132,38 @@ label choice1_done:
         
         pause .5
         
+        scene volcanoBG
+        with Dissolve(.5)
+        
+        play music "music/AgnaktorBattle.mp3"
+        
+        pause .5
+        
+        play sound "music/AgnaktorRoar.mp3"
+        
+        show Agnaktor at left
+        "Agnaktor" "ROOOOOAAARRRR!"
+        
+        pause .5
+        
+        show cAlex at right
+        show cHunter at right behind cAlex
+        A "Here we go, cool drinks up buddy!"
+        H "Already on it!"
 return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
