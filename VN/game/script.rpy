@@ -10,6 +10,7 @@ define A = Character('Alex', color="#3FCCFF")
 define H = Character('G Rank Hunter', color="#000000")
 image cNova = "images/CNova.png"
 image cShawn = "images/CShawn.png"
+image BGWhose = "images/BGWhose.png"
 image BG = "images/BG.jpg"
 image cAlex = "images/CAlex.png"
 image cHunter = "images/cHunter.png"                             
@@ -119,5 +120,14 @@ label choice1_done:
         
         show cHunter at right
         H "YA MOTHER FUCKER, LETS GO!!"
+        
+        stop music
+        scene BGWhose
+        with Dissolve(.5)
+        play sound "music/Swhosethat.mp3"
+        
+        "whose that Pokemon?"
+        
+        pause .5
         
 return
