@@ -7,6 +7,12 @@ TO UPDATE/PUSH FILES:
 	the git hub I would type:
 		git add hi.txt
 		git add images/
+	***IMPORTANT*** ***IMPORTANT*** ***IMPORTANT***
+	    if you are adding a directory like "VN/"
+	    make sure that you use the "git add -all"
+   	    command so that it gets ALL the files.
+	***IMPORTANT*** ***IMPORTANT*** ***IMPORTANT***
+	
 
 3. use the command "git commit -m "message/summary/title here" " to commit your changes.
 	ex. for the above example I would simply type:

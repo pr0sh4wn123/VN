@@ -10,13 +10,16 @@ define A = Character('Alex', color="#3FCCFF")
 define H = Character('G Rank Hunter', color="#000000")
 image cNova = "images/CNova.png"
 image cShawn = "images/CShawn.png"
-image BGWhose = "images/BGWhose.png"
+image BGWhose1 = "images/BGWhose1.png"
+image BGWhose2 = "images/BGWhose2.png"
 image BG = "images/BG.jpg"
 image cAlex = "images/CAlex.png"
 image cHunter = "images/cHunter.png"                             
 image tavernBG = "images/tavernBG.jpg"
 image Agnaktor = "images/Agnaktor.png"
 image volcanoBG = "images/volcanoBG.jpg"
+image attack999 = "images/-999.png"
+image alchemy = "images/alchemyCircle.png"
 
 # The game starts here.
 label start:
@@ -36,7 +39,7 @@ label start:
     show cNova at center
     N "Ya! Let's find him/her!"
     
-    show cShawn at right
+    show cShawn at right behind cNova
     S "Gotcha~"
 
     show cAlex at left behind cNova
@@ -82,7 +85,7 @@ label tavern:
     show cShawn at right
     S "Well.. that didn't go to well..."
     
-    show cNova at center behind cShawn
+    show cNova at center
     N "Ya that kind of sucked... Should we keep trying?"
     
     menu:
@@ -124,11 +127,20 @@ label choice1_done:
         H "YA MOTHER FUCKER, LETS GO!!"
         
         stop music
-        scene BGWhose
+        scene BGWhose1
         with Dissolve(.5)
-        play sound "music/Swhosethat.mp3"
+        play sound "music/Swhosethat1.mp3"
         
-        "whose that Pokemon?"
+        "Who's that Pokemon?"
+        
+        pause .5
+        
+        stop sound
+        scene BGWhose2
+        with Dissolve(.5)
+        play sound "music/Swhosethat2.mp3"
+        
+        "It's Ahhggammeeruuaahhgggaaughh!!"
         
         pause .5
         
@@ -147,9 +159,77 @@ label choice1_done:
         pause .5
         
         show cAlex at right
-        show cHunter at right behind cAlex
+        show cHunter at right behind cAlex, Agnaktor:
+            xalign .8 yalign .3
         A "Here we go, cool drinks up buddy!"
         H "Already on it!"
+        
+        show Agnaktor:
+            xalign 0.0 yalign 0.5
+            linear 0.5 xalign 0.5
+            linear 0.5 xalign 0.0
+            xalign 0.0
+            
+        pause 1.0
+        show attack999:
+            xalign .8 yalign .1
+        pause .5
+            
+        H "Aghh!..."
+            
+        show cHunter behind cAlex, Agnaktor:
+            linear 2.0 xalign 2.0
+        hide attack999
+        
+        H "FUCK...sorry bud... i'm done... ugh.."
+        
+        A "Pshh.. call yourself G rank?... "
+        
+        A "I'll show you how it's done."
+        
+        show alchemy:
+            xalign 0.5 yalign 0.5
+            zoom 1.0 alpha 0.25 rotate 0 xanchor 0.5 yanchor 0.5
+            linear 1.0 zoom 1.3 alpha 1.0 rotate 180
+            linear 1.0 zoom 1.0 alpha 0.25 rotate 360
+            repeat
+        
+        A "Shingarau No Pistaratta Mischal Porava!"
+        
+        show Agnaktor:
+            block:
+                choice:
+                    linear 0.5 xalign 0.0
+                choice:
+                    linear 0.5 xalign 0.1
+                choice:
+                    linear 0.5 yalign 0.5
+                choice:
+                    linear 0.5 yalign 0.6
+                choice:
+                    linear 0.5 yalign 0.4
+                repeat
+    play sound "music/AgnaktorRoar.mp3"
+    "Agnaktor" "RAAGGHHHH!!!"
+    
+    show alchemy:
+        alpha 1.0
+        linear 2.0 zoom 3.0
+        
+    A "DIEE!!!"
+    
+    show Agnaktor:
+        linear 1.0 xalign -2.0
+        
+    play sound "music/AgnaktorRoar.mp3"
+    "Agnaktor" "Grrraahhh!"
+    
+    hide alchemy
+    hide cHunter
+    hide Agnaktor
+    
+    A "Alright... now we can actually find an artist..."
+        
 return
 
 

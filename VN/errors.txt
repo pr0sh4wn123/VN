@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 13: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a ' at the end of the first line.)
-    image BGWhose = 'image/BGWhose.png"
+File "game/script.rpy", line 207: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    A "RAAGGHHHH!!!"
+                    ^
 
 Ren'Py Version: Ren'Py 6.99.1.329

@@ -1,11 +1,11 @@
-Mon Apr 20 00:55:49 2015
+Mon Apr 20 12:50:34 2015
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.1.329
 VN 0.0
 
 
 Windowed mode.
-Screen sizes: virtual=(800, 600) physical=(800, 600)
+Screen sizes: virtual=(800, 600) physical=(796, 597)
 Vendor: 'Intel'
 Renderer: 'Intel(R) HD Graphics 4000'
 Version: '4.0.0 - Build 10.18.10.3958'
@@ -197,8 +197,8 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.019000 seconds.
-- Frame drawn at 0.033000 seconds.
+- Frame drawn at 0.017000 seconds.
+- Frame drawn at 0.032000 seconds.
 - Frame drawn at 0.049000 seconds.
-- Frame drawn at 0.065000 seconds.
-- 0.065000 seconds to render 5 frames.
+- Frame drawn at 0.066000 seconds.
+- 0.066000 seconds to render 5 frames.
