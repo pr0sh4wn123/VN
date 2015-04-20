@@ -1,25 +1,43 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 9, in script
-    define A = character('Alex', color="#000000")
-  File "game/script.rpy", line 9, in <module>
-    define A = character('Alex', color="#000000")
-NameError: name 'character' is not defined
+  File "game/script.rpy", line 28, in script
+    S "What? Oh ya! We need an artist!!"
+IOError: Couldn't find file 'calmme.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 9, in script
-    define A = character('Alex', color="#000000")
-  File "C:\Users\Torin\Desktop\Games\snepy\renpy-6.99.1-sdk\renpy\ast.py", line 1723, in execute
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Users\Torin\Desktop\Games\snepy\renpy-6.99.1-sdk\renpy\python.py", line 1456, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 9, in <module>
-    define A = character('Alex', color="#000000")
-NameError: name 'character' is not defined
+  File "game/script.rpy", line 28, in script
+    S "What? Oh ya! We need an artist!!"
+  File "C:\Users\Shawn\Desktop\RenPy\renpy-6.99.1-sdk\renpy\ast.py", line 593, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "C:\Users\Shawn\Desktop\RenPy\renpy-6.99.1-sdk\renpy\exports.py", line 1033, in say
+    who(what, interact=interact)
+  File "C:\Users\Shawn\Desktop\RenPy\renpy-6.99.1-sdk\renpy\character.py", line 826, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\Shawn\Desktop\RenPy\renpy-6.99.1-sdk\renpy\character.py", line 688, in do_display
+    **display_args)
+  File "C:\Users\Shawn\Desktop\RenPy\renpy-6.99.1-sdk\renpy\character.py", line 491, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\Shawn\Desktop\RenPy\renpy-6.99.1-sdk\renpy\ui.py", line 247, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Shawn\Desktop\RenPy\renpy-6.99.1-sdk\renpy\display\core.py", line 2243, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "C:\Users\Shawn\Desktop\RenPy\renpy-6.99.1-sdk\renpy\display\core.py", line 2522, in interact_core
+    renpy.audio.audio.interact()
+  File "C:\Users\Shawn\Desktop\RenPy\renpy-6.99.1-sdk\renpy\audio\audio.py", line 792, in interact
+    periodic()
+  File "C:\Users\Shawn\Desktop\RenPy\renpy-6.99.1-sdk\renpy\audio\audio.py", line 726, in periodic
+    c.periodic()
+  File "C:\Users\Shawn\Desktop\RenPy\renpy-6.99.1-sdk\renpy\audio\audio.py", line 342, in periodic
+    topf = load(self.file_prefix + topq.filename + self.file_suffix)
+  File "C:\Users\Shawn\Desktop\RenPy\renpy-6.99.1-sdk\renpy\audio\audio.py", line 76, in load
+    rv = renpy.loader.load(fn)
+  File "C:\Users\Shawn\Desktop\RenPy\renpy-6.99.1-sdk\renpy\loader.py", line 450, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'calmme.mp3'.
 
-Windows-8-6.2.9200
+Windows-7-6.1.7601-SP1
 Ren'Py 6.99.1.329
 VN 0.0

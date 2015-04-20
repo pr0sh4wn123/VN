@@ -6,12 +6,12 @@
 # Declare characters used by this game.
 define N = Character('Nova', color="#0066FF")
 define S = Character('Shawn', color="#33CC33")
-define A = Character('Alex', color="#33CC33")
-image cNova = "CNova.png"
-image cShawn = "CShawn.png"
-image BG = "BG.jpg"
-image cAlex = "CAlex.png"
-play music "calmme"
+define A = Character('Alex', color="#3FCCFF")
+image cNova = "images/CNova.png"
+image cShawn = "images/CShawn.png"
+image BG = "images/BG.jpg"
+image cAlex = "images/CAlex.png"
+image tavernBG = "images/tavernBG.jpg"
 
 # The game starts here.
 label start:
@@ -22,7 +22,7 @@ label start:
     hide cNova
     
     # Start the background music playing.
-    play music "calmme.mp3"
+    play music "music/Calmme.mp3"
     
     show cShawn at right
     S "What? Oh ya! We need an artist!!"
@@ -34,7 +34,24 @@ label start:
     show cShawn at right behind cNova
     S "Gotcha~"
 
-    show cAlex at center
+    show cAlex at left
     A "idiots..."
-                 
+    
+    pause .5
+    
+    scene tavernBG
+    with Dissolve(.5)
+    show cShawn at right
+    S "I don't see any artists anywhere... do you?"
+    
+    show cNova at center
+    N "Nope.. why did we go to a tavern to look for talent?"
+    
+    show cAlex at left
+    A "Hey! There's my old G rank hunter buddy! Hey let's go hunt an Agnaktor!"
+    
+    "SHUT THE HELL UP!!"
+    
+    A "ghey.."
+              
     return

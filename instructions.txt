@@ -1,0 +1,26 @@
+TO UPDATE/PUSH FILES: 
+
+1. copy/delete/modify files inside of the github folder.
+
+2. use the command "git add" to add those changes.
+	ex. if I add a file "hi.txt" and a directory"images/" into 
+	the git hub I would type:
+		git add hi.txt
+		git add images/
+
+3. use the command "git commit -m "message/summary/title here" " to commit your changes.
+	ex. for the above example I would simply type:
+		git commit -m "added images and hi"
+
+4. use the command "git push" to send the files to the repository.
+
+tl;dr:
+	1. copy file to git hub folder.
+	2. git add file
+	3. git commit -m "message/title/summary"
+	4. git push
+
+
+TO PULL/GET FILES:
+	
+1. use the command "git pull" to update your files with ones from the repository.
