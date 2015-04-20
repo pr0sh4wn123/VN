@@ -1,3 +1,10 @@
+IF THERE IS EVER AN ERROR OR MERGE CONFLICT:
+	1. use these commands to overwrite your files to the
+	   the newest ones inside of the repo:
+		"git fetch origin master"
+		"git reset --hard FETCH_HEAD"	
+		"git clean -df"
+
 TO UPDATE/PUSH FILES: 
 
 1. copy/delete/modify files inside of the github folder.
