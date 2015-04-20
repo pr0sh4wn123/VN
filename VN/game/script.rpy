@@ -7,10 +7,12 @@
 define N = Character('Nova', color="#0066FF")
 define S = Character('Shawn', color="#33CC33")
 define A = Character('Alex', color="#3FCCFF")
+define H = Character('Hunter', color="#000000")
 image cNova = "images/CNova.png"
 image cShawn = "images/CShawn.png"
 image BG = "images/BG.jpg"
 image cAlex = "images/CAlex.png"
+image cHunter = "images/cHunter.png"                             
 image tavernBG = "images/tavernBG.jpg"
 
 # The game starts here.
@@ -22,7 +24,7 @@ label start:
     hide cNova
     
     # Start the background music playing.
-    play music "music/Calmme.mp3"
+    play music "music/Calmme.mp3" 
     
     show cShawn at right
     S "What? Oh ya! We need an artist!!"
@@ -53,5 +55,17 @@ label start:
     "SHUT THE HELL UP!!"
     
     A "ghey.."
+    hide cAlex
+    hide cNova
+    hide cShawn
+    stop music 
+                                                        
+    pause .5                                                    
+   
+   # Start the background music playing.
+    play music "music/battle.mp3"
+   
+    show cHunter at center
+    H "you guys wanna go?"
               
     return
