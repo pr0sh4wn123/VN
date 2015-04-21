@@ -1,4 +1,4 @@
-Mon Apr 20 12:50:34 2015
+Mon Apr 20 21:07:23 2015
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.1.329
 VN 0.0
@@ -197,8 +197,8 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.017000 seconds.
-- Frame drawn at 0.032000 seconds.
-- Frame drawn at 0.049000 seconds.
-- Frame drawn at 0.066000 seconds.
-- 0.066000 seconds to render 5 frames.
+- Frame drawn at 0.012000 seconds.
+- Frame drawn at 0.026000 seconds.
+- Frame drawn at 0.042000 seconds.
+- Frame drawn at 0.060000 seconds.
+- 0.060000 seconds to render 5 frames.
