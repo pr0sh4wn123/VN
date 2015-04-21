@@ -73,7 +73,9 @@ label tavern:
    # Start the background music playing.
     play music "music/battle.mp3"
    
-    show cHunter at center
+    show cHunter:
+        xalign -0.2
+        yalign 2.0
     H "you guys wanna go?"
     
     pause .5
