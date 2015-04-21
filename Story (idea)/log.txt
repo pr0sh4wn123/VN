@@ -1,4 +1,4 @@
-Tue Apr 21 14:30:44 2015
+Tue Apr 21 14:49:29 2015
 Windows-8-6.2.9200
 Ren'Py 6.99.1.329
 VN 0.0
@@ -336,20 +336,8 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.078000 seconds.
-- Frame drawn at 0.078000 seconds.
-- Frame drawn at 0.093000 seconds.
-- Frame drawn at 0.109000 seconds.
-- 0.109000 seconds to render 5 frames.
-Traceback (most recent call last):
-  File "C:\Users\Torin\Desktop\Games\snepy\renpy-6.99.1-sdk\renpy\execution.py", line 358, in run
-    node.execute()
-  File "C:\Users\Torin\Desktop\Games\snepy\renpy-6.99.1-sdk\renpy\ast.py", line 1040, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\Torin\Desktop\Games\snepy\renpy-6.99.1-sdk\renpy\ast.py", line 1003, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\Torin\Desktop\Games\snepy\renpy-6.99.1-sdk\renpy\python.py", line 1466, in py_eval
-    return eval(py_compile(source, 'eval'), globals, locals)
-  File "game/script.rpy", line 74, in <module>
-    show ava_uniform_salute_talk at bottom
-NameError: name 'bottom' is not defined
+- Frame drawn at 0.081000 seconds.
+- Frame drawn at 0.083000 seconds.
+- Frame drawn at 0.095000 seconds.
+- Frame drawn at 0.112000 seconds.
+- 0.112000 seconds to render 5 frames.

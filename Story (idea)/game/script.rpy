@@ -5,7 +5,6 @@
 image cNova = "images/CNova.png"
 image cShawn = "images/CShawn.png"
 image cSola = "images/cSola.png"
-image ava_uniform_salute_talk = "images/Character/Ava/ava_uniform_salute_talk.png"
 image BGWhose1 = "images/BGWhose1.png"
 image BGWhose2 = "images/BGWhose2.png"
 image BG = "images/BG.jpg"
@@ -71,12 +70,10 @@ label start:
     pause (1)
     "(door rings)"
     Kay "come in!"
-    show ava_uniform_salute_talk at center
     Av "Commander! sorry to wake you but we have the Admiral Grey on the line"
     Av "He wishes to speak with you"
     Kay "Very well. Patch him through."
     "(Commander Kayoto picks up the phone)"
-    hide ava_uniform_salute_talk
     play music "music/Background.mp3"
     
     Kay "Hello Admiral, its been some time since we last spoke."
