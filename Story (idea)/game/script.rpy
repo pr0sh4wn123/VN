@@ -71,7 +71,7 @@ label start:
     "Adm. Grey - yes it i'm afraid this wont be our last."
     Kay "what seems to be the problem Admeral"
     
-    "Adm. Grey - it appears we need top call upon the Sunrider and its Ryders once more"
+    "Adm. Grey - it appears we need to call upon the Sunrider and its Ryders once more"
     Kay "how can we assist?"
     
     "Adm. Grey - As you might be aware, the Alliance pushed far into PACT'S space and we are having a pesky problem that we have no doupt that the Sunrider can handle"
