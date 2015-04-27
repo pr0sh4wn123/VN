@@ -39,7 +39,7 @@ label start:
     scene BGtheme
     # Start the background music playing.
     play music "music/themeMyHeart.mp3"
-    "EPISODE 1A - THE SAGA CONTINUES"
+    "{color=#FFFFFF}EPISODE 1A - THE SAGA CONTINUES"
     stop music 
     pause (.5)
     
@@ -48,61 +48,61 @@ label start:
     
     scene BGstars
     with Dissolve(.5) 
-    "Promise us!!"
-    "Promise us that you will come back alive."
+    "{color=#FFFFFF}Promise us!!"
+    "{color=#FFFFFF}Promise us that you will come back alive."
     show cSola at right
-    Sol "Please atleast promise me this!"
-    Mys "I..."
-    "( ??? breaths out, then smiles)"
-    Mys "I promise, I'll come back"
+    Sol "{color=#FFFFFF}Please atleast promise me this!"
+    Mys "{color=#FFFFFF}I..."
+    "{color=#FFFFFF}( ??? breaths out, then smiles)"
+    Mys "{color=#FFFFFF}I promise, I'll come back"
     pause (.5)
 
     scene BGoffice
     with Dissolve(.5) 
-    "Ugh my head...."
-    "What was that?"
-    "Was it a dream..."
+    "{color=#FFFFFF}Ugh my head...."
+    "{color=#FFFFFF}What was that?"
+    "{color=#FFFFFF}Was it a dream..."
     stop music 
     pause (.5)
     "..."
     
     queue sound "music/Dingsound.mp3"
     pause (1)
-    "(door rings)"
-    Kay "come in!"
-    Av "Commander! sorry to wake you but we have the Admiral Grey on the line"
-    Av "He wishes to speak with you"
-    Kay "Very well. Patch him through."
-    "(Commander Kayoto picks up the phone)"
+    "{color=#000000}(door rings)"
+    Kay "{color=#000000}come in!"
+    Av "{color=#000000}Commander! sorry to wake you but we have the Admiral Grey on the line"
+    Av "{color=#000000}He wishes to speak with you"
+    Kay "{color=#000000}Very well. Patch him through."
+    "{color=#000000}(Commander Kayoto picks up the phone)"
     play music "music/Background.mp3"
     
-    Kay "Hello Admiral, its been some time since we last spoke."
+    Kay "{color=#000000}Hello Admiral, its been some time since we last spoke."
     
-    "Adm. Grey -yes, and i'm afraid this wont be our last."
-    Kay "What seems to be the problem Admeral"
+    "{color=#FFFFFF}Adm. Grey" "{color=#000000}yes, and i'm afraid this wont be our last."
+    Kay "{color=#000000}What seems to be the problem Admeral"
     
-    "Adm. Grey -It appears we need to call upon the Sunrider and its Ryders once more"
-    Kay "how can we assist?"
+    "{color=#FFFFFF}Adm. Grey" "{color=#000000}It appears we need to call upon the Sunrider and its Ryders once more"
+    Kay "{color=#000000}how can we assist?"
     
-    "Adm. Grey -As you might be aware, the Alliance pushed far into PACT'S space. However, we are having a pesky problem that we have no doupt that the Sunrider can handle"
-    "Adm. Grey -We, here in the Alliance, will pay you and your crew just as we had before."
+    "{color=#FFFFFF}Adm. Grey" "{color=#000000}As you might be aware, the Alliance pushed far into PACT'S space. However, we are having a pesky problem that we have no doupt that the Sunrider can handle"
+    "{color=#FFFFFF}Adm. Grey" "{color=#000000}We, here in the Alliance, will pay you and your crew just as we had before."
     
-    Kay "Alright Admiral you have my attention."
-    "adm. Grey -I'm sending you some documents now."
-    "these photos contain an image of an elite fleet that has no doubt been troubling our fleet for a few weeks now."
-    Kay "I thought the Legion was the last of the PACTS elite force"
-    "Adm. Grey -As did we."
-    "Adm. Grey -It appears that out of desperation, The PACT pulled one last trick out of their sleeves."
-    Kay "How come intel hasnt notice this fleet sooner?"
-    "Adm. Grey -They must have kept them in hiding untill now."
-    Kay "What do we know of them so far?"
-    "Adm. Grey -Sadly nothing, every encounter we had with this fleet turns out to be a disaster."
-    "Adm. Grey -We have no intel on it other than they exist and are causing havoc on out main lines."
-    Kay "This fleet looks like an ordinary PACT fleet to me."
-    Kay "How can they be causing ou trouble?"
-    "Adm. Grey -Thats not all of them."
-    "Adm. Grey -The next image may spark your intrest."
+    Kay "{color=#000000}Alright Admiral you have my attention."
+    "{color=#FFFFFF}adm. Grey" "{color=#000000}I'm sending you some documents now."
+    "{color=#FFFFFF}adm. Grey" "{color=#000000}these photos contain an image of an elite fleet that has no doubt been troubling our fleet for a few weeks now."
+    Kay "{color=#000000}I thought the Legion was the last of the PACTS elite force"
+    "{color=#FFFFFF}Adm. Grey" "{color=#000000}As did we."
+    "{color=#FFFFFF}Adm. Grey" "{color=#000000}It appears that out of desperation, The PACT pulled one last trick out of their sleeves."
+    Kay "{color=#000000}How come intel hasnt notice this fleet sooner?"
+    "{color=#FFFFFF}Adm. Grey" "{color=#000000}They must have kept them in hiding untill now."
+    Kay "{color=#000000}What do we know of them so far?"
+    "{color=#FFFFFF}Adm. Grey" "{color=#000000}Sadly nothing, every encounter we had with this fleet turns out to be a disaster."
+    "{color=#FFFFFF}Adm. Grey" "{color=#000000}We have no intel on it other than they exist and are causing havoc on out main lines."
+    Kay "{color=#000000}This fleet looks like an ordinary PACT fleet to me."
+    Kay "{color=#000000}How can they be causing ou trouble?"
+    "{color=#FFFFFF}Adm. Grey" "{color=#000000}Thats not all of them."
+    "{color=#FFFFFF}Adm. Grey" "{color=#000000}The next image may spark your intrest."
     show sunriderx at left
-    "(Kayoto's heart sinks down his chest, while he clenches his fist.)"
-    Kay "how is this possible? (he mumbles)."
+    "{color=#000000}(Kayoto's heart sinks down his chest, while he clenches his fist.)"
+    Kay "{color=#000000}how is this possible? (he mumbles)."
 return 

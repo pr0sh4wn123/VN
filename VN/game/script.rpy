@@ -26,24 +26,24 @@ label start:
     
     scene BG
     show cNova at left
-    N "Shawn! We are creating a game! ...However.."
+    N "{color=#000000}Shawn! We are creating a game! ...However.."
     hide cNova
     
     # Start the background music playing.
     play music "music/Calmme.mp3" 
     
     show cShawn at right
-    S "What? Oh ya! We need an artist!!"
+    S "{color=#000000}What? Oh ya! We need an artist!!"
     hide cShawn
 
     show cNova at center
-    N "Ya! Let's find him/her!"
+    N "{color=#000000}Ya! Let's find him/her!"
     
     show cShawn at right behind cNova
-    S "Gotcha~"
+    S "{color=#000000}Gotcha~"
 
     show cAlex at left behind cNova
-    A "idiots..."
+    A "{color=#000000}idiots..."
     
 label tavern:
     
@@ -52,17 +52,17 @@ label tavern:
     scene tavernBG
     with Dissolve(.5)
     show cShawn at right
-    S "I don't see any artists anywhere... do you?"
+    S "{color=#000000}I don't see any artists anywhere... do you?"
     
     show cNova at center
-    N "Nope.. why did we go to a tavern to look for talent?"
+    N "{color=#000000}Nope.. why did we go to a tavern to look for talent?"
     
     show cAlex at left behind cNova
-    A "Hey! There's my old G rank hunter buddy! Hey let's go hunt an Agnaktor!"
+    A "{color=#000000}Hey! There's my old G rank hunter buddy! Hey let's go hunt an Agnaktor!"
     
     "SHUT THE HELL UP!!"
     
-    A "ghey.."
+    A "{color=#000000}ghey.."
     hide cAlex
     hide cNova
     hide cShawn
@@ -76,7 +76,7 @@ label tavern:
     show cHunter:
         xalign -0.2
         yalign 2.0
-    H "you guys wanna go?"
+    H "{color=#000000}you guys wanna go?"
     
     pause .5
     stop music
@@ -85,23 +85,23 @@ label tavern:
     with Dissolve(.5)
     play music "music/Calmme.mp3"
     show cShawn at right
-    S "Well.. that didn't go to well..."
+    S "{color=#000000}Well.. that didn't go to well..."
     
     show cNova at center
-    N "Ya that kind of sucked... Should we keep trying?"
+    N "{color=#000000}Ya that kind of sucked... Should we keep trying?"
     
     menu:
-        "Yes, let's find an artist!":
+        "{color=#000000}Yes, let's find an artist!":
             jump choice1_yes
         
-        "No... I give up.":
+        "{color=#000000}No... I give up.":
             jump choice1_no
         
 label choice1_yes:
     $menu_flag = True
     
     show cAlex at left behind cNova
-    A "Ughh... of course you want to keep trying..."
+    A "{color=#000000}Ughh... of course you want to keep trying..."
     
     jump choice1_done
     
@@ -109,7 +109,7 @@ label choice1_no:
     $menu_flag = False
     
     show cAlex at left behind cNova
-    A "Thank you! Now let's go back to monster hunter!"
+    A "{color=#000000}Thank you! Now let's go back to monster hunter!"
     
     jump choice1_done
 
@@ -123,17 +123,17 @@ label choice1_done:
         stop music
         play music "music/battle.mp3"
         show cAlex at left
-        A "AGNAKTOR!! I'M COMING FOR YOU BITCH!!"
+        A "{color=#000000}AGNAKTOR!! I'M COMING FOR YOU BITCH!!"
         
         show cHunter at right
-        H "YA MOTHER FUCKER, LETS GO!!"
+        H "{color=#000000}YA MOTHER FUCKER, LETS GO!!"
         
         stop music
         scene BGWhose1
         with Dissolve(.5)
         play sound "music/Swhosethat1.mp3"
         
-        "Who's that Pokemon?"
+        "{color=#000000}Who's that Pokemon?"
         
         pause .5
         
@@ -142,7 +142,7 @@ label choice1_done:
         with Dissolve(.5)
         play sound "music/Swhosethat2.mp3"
         
-        "It's Ahhggammeeruuaahhgggaaughh!!"
+        "{color=#000000}It's Ahhggammeeruuaahhgggaaughh!!"
         
         pause .5
         
@@ -156,15 +156,15 @@ label choice1_done:
         play sound "music/AgnaktorRoar.mp3"
         
         show Agnaktor at left
-        "Agnaktor" "ROOOOOAAARRRR!"
+        "{color=#000000}Agnaktor" "{color=#000000}ROOOOOAAARRRR!"
         
         pause .5
         
         show cAlex at right
         show cHunter at right behind cAlex, Agnaktor:
             xalign .8 yalign .3
-        A "Here we go, cool drinks up buddy!"
-        H "Already on it!"
+        A "{color=#000000}Here we go, cool drinks up buddy!"
+        H "{color=#000000}Already on it!"
         
         show Agnaktor:
             xalign 0.0 yalign 0.5
@@ -177,17 +177,17 @@ label choice1_done:
             xalign .8 yalign .1
         pause .5
             
-        H "Aghh!..."
+        H "{color=#000000}Aghh!..."
             
         show cHunter behind cAlex, Agnaktor:
             linear 2.0 xalign 2.0
         hide attack999
         
-        H "FUCK...sorry bud... i'm done... ugh.."
+        H "{color=#000000}FUCK...sorry bud... i'm done... ugh.."
         
-        A "Pshh.. call yourself G rank?... "
+        A "{color=#000000}Pshh.. call yourself G rank?... "
         
-        A "I'll show you how it's done."
+        A "{color=#000000}I'll show you how it's done."
         
         show alchemy:
             xalign 0.5 yalign 0.5
@@ -196,7 +196,7 @@ label choice1_done:
             linear 1.0 zoom 1.0 alpha 0.25 rotate 360
             repeat
         
-        A "Shingarau No Pistaratta Mischal Porava!"
+        A "{color=#000000}Shingarau No Pistaratta Mischal Porava!"
         
         show Agnaktor:
             block:
@@ -212,25 +212,25 @@ label choice1_done:
                     linear 0.5 yalign 0.4
                 repeat
     play sound "music/AgnaktorRoar.mp3"
-    "Agnaktor" "RAAGGHHHH!!!"
+    "{color=#000000}Agnaktor" "{color=#000000}RAAGGHHHH!!!"
     
     show alchemy:
         alpha 1.0
         linear 2.0 zoom 3.0
         
-    A "DIEE!!!"
+    A "{color=#000000}DIEE!!!"
     
     show Agnaktor:
         linear 1.0 xalign -2.0
         
     play sound "music/AgnaktorRoar.mp3"
-    "Agnaktor" "Grrraahhh!"
+    "{color=#000000}Agnaktor" "{color=#000000}Grrraahhh!"
     
     hide alchemy
     hide cHunter
     hide Agnaktor
     
-    A "Alright... now we can actually find an artist..."
+    A "{color=#000000}Alright... now we can actually find an artist..."
         
 return
 
